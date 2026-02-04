@@ -87,12 +87,16 @@ function App() {
           <div className="flex items-center gap-2">
             <Palette className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold">ThemeGrab</span>
+            <span className="hidden sm:inline-block text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+              Free AI Tool
+            </span>
           </div>
           <a
-            href="https://github.com"
+            href="https://github.com/chrisjohnleah/theme-extractor"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="View source on GitHub"
           >
             <Github className="h-5 w-5" />
           </a>
@@ -105,11 +109,11 @@ function App() {
           {/* Hero */}
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-bold tracking-tight">
-              Extract Themes from Any Website
+              Free AI-Powered Tailwind Theme Extractor
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Grab Tailwind/shadcn CSS theme variables from any website URL or screenshot.
-              Ready to paste into Lovable.dev, v0.dev, and more.
+              Extract Tailwind CSS and shadcn/ui theme variables from any website URL or screenshot in seconds.
+              Perfect for <strong>Lovable.dev</strong>, <strong>v0.dev</strong>, and modern web development.
             </p>
           </div>
 
@@ -177,48 +181,111 @@ function App() {
           )}
 
           {/* Features */}
-          <div className="grid gap-4 md:grid-cols-3">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">URL Extraction</CardTitle>
-              </CardHeader>
-              <CardContent>
+          <section aria-labelledby="features-heading">
+            <h2 id="features-heading" className="sr-only">Features</h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Website URL Extraction</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Paste any website URL and our AI analyzes its CSS to extract the complete color palette automatically.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">AI Screenshot Analysis</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Upload a screenshot and our AI-powered color quantization algorithm extracts dominant brand colors.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">shadcn/ui Ready CSS</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Get production-ready CSS variables compatible with shadcn/ui, Lovable.dev, v0.dev, and Tailwind CSS.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          {/* How it works */}
+          <section className="text-center space-y-4 py-8 border-t">
+            <h2 className="text-2xl font-semibold">How It Works</h2>
+            <div className="grid gap-6 md:grid-cols-3 text-left max-w-3xl mx-auto">
+              <div className="space-y-2">
+                <div className="text-3xl font-bold text-primary">1</div>
+                <h3 className="font-medium">Paste URL or Upload</h3>
                 <p className="text-sm text-muted-foreground">
-                  Paste any website URL and we'll analyze its CSS to extract the color palette.
+                  Enter any website URL or drag and drop a screenshot
                 </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Screenshot Analysis</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-bold text-primary">2</div>
+                <h3 className="font-medium">AI Extracts Colors</h3>
                 <p className="text-sm text-muted-foreground">
-                  Upload a screenshot and our color quantization algorithm extracts dominant colors.
+                  Our AI identifies primary, secondary, and accent colors
                 </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Ready-to-Use CSS</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl font-bold text-primary">3</div>
+                <h3 className="font-medium">Copy CSS Variables</h3>
                 <p className="text-sm text-muted-foreground">
-                  Get shadcn/ui compatible CSS variables that work with Lovable.dev, v0.dev, and more.
+                  One-click copy ready-to-use Tailwind theme variables
                 </p>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="border-t mt-16">
-        <div className="container mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
-          <p>
-            Built with React, Tailwind CSS, and shadcn/ui.
-            Deploy your own on Cloudflare Pages.
-          </p>
+      <footer className="border-t mt-16 bg-muted/30">
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <Palette className="h-5 w-5 text-muted-foreground" />
+              <span className="font-semibold">ThemeGrab</span>
+            </div>
+            <p className="text-sm text-muted-foreground text-center">
+              Built by{' '}
+              <a
+                href="https://happywebs.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Chris Leah
+              </a>
+              {' '}at{' '}
+              <a
+                href="https://happywebs.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground hover:text-primary transition-colors"
+              >
+                HappyWebs.co.uk
+              </a>
+            </p>
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <a
+                href="https://github.com/chrisjohnleah/theme-extractor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors"
+              >
+                Open Source
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

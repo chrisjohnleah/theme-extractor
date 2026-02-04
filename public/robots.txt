@@ -1,0 +1,11 @@
+# ThemeGrab - robots.txt
+# https://themegrab.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://themegrab.dev/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
