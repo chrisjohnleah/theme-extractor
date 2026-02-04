@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#18181b"/>
+      <stop offset="100%" style="stop-color:#27272a"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative color swatches in background -->
+  <rect x="50" y="450" width="80" height="80" rx="12" fill="#6366f1" opacity="0.3"/>
+  <rect x="150" y="480" width="60" height="60" rx="10" fill="#22c55e" opacity="0.25"/>
+  <rect x="1050" y="100" width="70" height="70" rx="10" fill="#f59e0b" opacity="0.3"/>
+  <rect x="1000" y="180" width="50" height="50" rx="8" fill="#ef4444" opacity="0.25"/>
+  <rect x="1080" y="200" width="60" height="60" rx="10" fill="#8b5cf6" opacity="0.2"/>
+
+  <!-- Icon -->
+  <g transform="translate(100, 180)">
+    <circle cx="60" cy="60" r="55" fill="url(#iconGrad)"/>
+    <rect x="30" y="35" width="22" height="22" rx="4" fill="#ffffff"/>
+    <rect x="30" y="63" width="22" height="22" rx="4" fill="#ffffff" opacity="0.8"/>
+    <rect x="68" y="35" width="22" height="22" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="68" y="63" width="22" height="22" rx="4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="60" cy="60" r="12" fill="#18181b" opacity="0.3"/>
+    <circle cx="60" cy="60" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="250" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#ffffff">ThemeGrab</text>
+
+  <!-- Tagline -->
+  <text x="250" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#a1a1aa">Free Tailwind &amp; shadcn Theme Extractor</text>
+
+  <!-- Description -->
+  <text x="100" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#71717a">Extract color themes from any website URL or screenshot.</text>
+  <text x="100" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#71717a">Get ready-to-use CSS variables for your projects.</text>
+
+  <!-- URL -->
+  <text x="100" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#6366f1">themegrab.dev</text>
+
+  <!-- Credit -->
+  <text x="1100" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#52525b" text-anchor="end">by HappyWebs.co.uk</text>
+
+  <!-- Color palette preview -->
+  <g transform="translate(750, 380)">
+    <rect x="0" y="0" width="350" height="70" rx="12" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <rect x="20" y="15" width="40" height="40" rx="6" fill="#6366f1"/>
+    <rect x="75" y="15" width="40" height="40" rx="6" fill="#22c55e"/>
+    <rect x="130" y="15" width="40" height="40" rx="6" fill="#f59e0b"/>
+    <rect x="185" y="15" width="40" height="40" rx="6" fill="#ef4444"/>
+    <rect x="240" y="15" width="40" height="40" rx="6" fill="#8b5cf6"/>
+    <rect x="295" y="15" width="40" height="40" rx="6" fill="#18181b" stroke="#3f3f46"/>
+  </g>
+</svg>
