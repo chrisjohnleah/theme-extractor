@@ -88,7 +88,7 @@ function App() {
             <Palette className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold">ThemeGrab</span>
             <span className="hidden sm:inline-block text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
-              Free AI Tool
+              Free & Open Source
             </span>
           </div>
           <a
@@ -109,7 +109,7 @@ function App() {
           {/* Hero */}
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-bold tracking-tight">
-              Free AI-Powered Tailwind Theme Extractor
+              Free Tailwind & shadcn Theme Extractor
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Extract Tailwind CSS and shadcn/ui theme variables from any website URL or screenshot in seconds.
@@ -190,17 +190,17 @@ function App() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Paste any website URL and our AI analyzes its CSS to extract the complete color palette automatically.
+                    Paste any website URL and we'll analyze its CSS to extract the complete color palette automatically.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">AI Screenshot Analysis</CardTitle>
+                  <CardTitle className="text-lg">Screenshot Analysis</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Upload a screenshot and our AI-powered color quantization algorithm extracts dominant brand colors.
+                    Upload a screenshot and our color quantization algorithm extracts dominant brand colors.
                   </p>
                 </CardContent>
               </Card>
@@ -230,9 +230,9 @@ function App() {
               </div>
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-primary">2</div>
-                <h3 className="font-medium">AI Extracts Colors</h3>
+                <h3 className="font-medium">Colors Extracted</h3>
                 <p className="text-sm text-muted-foreground">
-                  Our AI identifies primary, secondary, and accent colors
+                  We identify primary, secondary, and accent colors automatically
                 </p>
               </div>
               <div className="space-y-2">
